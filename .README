@@ -1,12 +1,14 @@
 🧪 ex3 Tester
 
-This is an automated testing script for ex3, a C project with two main modes: Focus-Mode and CPU-Scheduler. The script compiles the code, runs multiple test cases, compares the output to expected results, and reports the outcome.
-📁 Project Structure
-
+This is an automated testing script for ex3, a C project with two main modes: Focus-Mode and CPU-Scheduler.
+The script compiles the code, runs multiple test cases, compares the output to expected results, and reports the outcome.
+# note all c files you should provide by yourself
+📁 Project Structure:
 .
 ├── ex3.c
 ├── Focud-Mode.c
 ├── CPU-Scheduler.c
+├── tester.sh
 ├── test1/
 │   ├── input.txt
 │   ├── expected_output.txt
@@ -24,10 +26,10 @@ This is an automated testing script for ex3, a C project with two main modes: Fo
 │   └── test1 / test2.{i} (generated)
 ├── run_tests.sh
 
-🛠️ How to Run
+🛠️ How to Run:
 
-chmod +x run_tests.sh
-./run_tests.sh
+chmod +x tester.sh
+./tester.sh
 
 ✅ What It Does
 
@@ -51,15 +53,14 @@ chmod +x run_tests.sh
 
         Deletes test1/output.txt
 
-        Shows a friendly “All tests passed” message with cute ASCII art 🎉
-
 📝 Notes
 
     All test input/output files are pre-prepared.
 
-    You only need to provide a working ex3.c file — the script takes care of the rest.
-
     Logs are only kept if tests fail for debugging purposes.
+
+    If your code works fine on the shell but the output is full of duplicates with the tester check if you used printf() function instead write().
+    That can cause output issues when used ">" flag in Bash.
 
 🐧 Requirements
 
@@ -68,5 +69,3 @@ chmod +x run_tests.sh
     GCC compiler
 
     Standard Unix tools: diff, mkdir, rm, etc.
-
-Let me know if you'd like a version with badges or GitHub-style formatting too.
