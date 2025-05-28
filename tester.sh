@@ -38,7 +38,7 @@ echo "Running CPU-Scheduler tests..."
 declare -a time_quantums=(2 20 3 1 5)
 all_passed=true
 
-for i in {1..3}; do
+for i in {1..5}; do
     input_file="test2/input/processes${i}.csv"
     expected_output="test2/expected_output/output${i}.txt"
     user_output="test2/user/user_output${i}.txt"
