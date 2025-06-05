@@ -43,6 +43,8 @@ chmod +x tester.sh
 
     Compares each output with the corresponding expected output
 
+    If you want to add any test jsut create processes{1}.csv and matched output{i}.txt and change the range of i. The test will check them too.
+
     Logs errors (if any) in the logs/ directory
 
     If all tests pass, it:
@@ -60,7 +62,7 @@ chmod +x tester.sh
     Logs are only kept if tests fail for debugging purposes.
 
     If your code works fine on the shell but the output is full of duplicates with the tester check if you used printf() function instead write().
-    That can cause output issues when used ">" flag in Bash.
+    That can cause output issues when used ">" operator in Bash.
 
 🐧 Requirements
 
